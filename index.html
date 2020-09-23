@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hofman</title>
+    <!--======= Reset styles =======-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <!-- Font awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!--======= Google fonts =======-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!--======= Custom styles =======-->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!--======= Favicon =======-->
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+  </head>
+  <body>
+    <!--======= HEADER =======-->
+    <header class="header">
+      <!--======= navbar =======-->
+      <nav class="navbar">
+        <div class="container">
+          <!--======= logo =======-->
+          <a href="#" class="navbar-logo">
+            <img src="assets/images/logo.svg" alt="page logotype" />
+          </a>
+          <!--======= checkbox=======-->
+          <input type="checkbox" name="menu-trigger" id="menu-switcher" />
+          <!--======= navbar-content =======-->
+          <div class="navbar-content">
+            <label
+              for="menu-switcher"
+              class="menu-trigger menu-trigger--position fas fa-times"
+            ></label>
+            <!--======= navbar-menu =======-->
+            <ul class="navbar-menu">
+              <li class="navbar-menu__item">
+                <a href="#" class="navbar-menu__link">Pricing</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#" class="navbar-menu__link">Projects</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#" class="navbar-menu__link">Team</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#" class="navbar-menu__link">Contact us</a>
+              </li>
+            </ul>
+            <!--======= social-menu =======-->
+            <ul class="navbar-social-menu">
+              <li class="navbar-social-menu__item">
+                <a href="https://twitter.com/" class="navbar-social-menu__link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="navbar-social-menu__item">
+                <a
+                  href="https://www.facebook.com"
+                  class="navbar-social-menu__link"
+                  ><i class="fab fa-facebook-square"></i
+                ></a>
+              </li>
+              <li class="navbar-social-menu__item">
+                <a
+                  href="https://www.instagram.com/"
+                  class="navbar-social-menu__link"
+                  ><i class="fab fa-instagram-square"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!--======= menu-trigger =======-->
+          <label for="menu-switcher" class="menu-trigger fas fa-bars"></label>
+        </div>
+      </nav>
+
+      <!--======= HERO section =======-->
+      <section class="hero">
+        <div class="hero-content">
+          <strong class="hero__slogan"> Welcome </strong>
+          <p class="hero__text">
+            Let’s make something great with the Responsive UI Kit!
+          </p>
+          <div class="hero__authorization">
+            <a href="#" class="hero__button">Sign up</a>
+            <a href="#" class="hero__button">Learn more</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!--======= MAIN =======-->
+    <main>
+      <!--======= PLAN CARDS section =======-->
+      <section class="plan-cards">
+        <div class="plan-cards-container">
+          <h2 class="plan-cards__title">Choose Your Plan</h2>
+          <input
+            type="radio"
+            class="card-switcher"
+            name="plan"
+            id="plan-silver"
+          />
+          <input
+            type="radio"
+            class="card-switcher"
+            name="plan"
+            id="plan-gold"
+            checked
+          />
+          <input
+            type="radio"
+            class="card-switcher"
+            name="plan"
+            id="plan-platinum"
+          />
+          <ul class="plan-cards__wrapper">
+            <!--======= card =======-->
+            <li class="card card--silver">
+              <div class="card__title">Silver</div>
+              <div class="card__prise">49</div>
+              <div class="card__time">Year</div>
+              <ul class="card__condition">
+                <li class="condition-item">Personal Account</li>
+                <li class="condition-item">25 GB Discspace</li>
+                <li class="condition-item">50 Uploads per day</li>
+              </ul>
+              <button class="card__order">Purchase</button>
+            </li>
+            <!--======= card =======-->
+            <li class="card card--gold">
+              <div class="card__title">Gold</div>
+              <div class="card__prise">99</div>
+              <div class="card__time">Year</div>
+              <ul class="card__condition">
+                <li class="condition-item">Personal Account</li>
+                <li class="condition-item">50 GB Discspace</li>
+                <li class="condition-item">500 Uploads per day</li>
+              </ul>
+              <button class="card__order">Purchase</button>
+            </li>
+            <!--======= card =======-->
+            <li class="card card--platinum">
+              <div class="card__title">Platinum</div>
+              <div class="card__prise">299</div>
+              <div class="card__time">Year</div>
+              <ul class="card__condition">
+                <li class="condition-item">Team Account</li>
+                <li class="condition-item">500 GB Discspace</li>
+                <li class="condition-item">Unlimited Uploads per day</li>
+              </ul>
+              <button class="card__order">Purchase</button>
+            </li>
+          </ul>
+          <div class="plan-controls">
+            <label
+              for="plan-silver"
+              class="plan-controls_item plan-controls_item--silver"
+              >Silver</label
+            >
+            <label
+              for="plan-gold"
+              class="plan-controls_item plan-controls_item--gold"
+              >Gold</label
+            >
+            <label
+              for="plan-platinum"
+              class="plan-controls_item plan-controls_item--platinum"
+              >Platinum</label
+            >
+          </div>
+        </div>
+      </section>
+
+      <!--======= PROJECTS section =======-->
+      <section class="projects">
+        <div class="container">
+          <h2 class="projects__title">Our Projects</h2>
+
+          <!--======= projects mobile header =======-->
+          <div class="projects__mobile-header">
+            <select class="mobile-header__input">
+              <option value="card">
+                <a href="#" class="project-mobile__link">Product design</a>
+              </option>
+              <option value="cash">
+                <a href="#" class="project-mobile__link">Graphic design</a>
+              </option>
+              <option value="cash">
+                <a href="#" class="project-mobile__link">Interior design</a>
+              </option>
+              <option value="cash">
+                <a href="#" class="project-mobile__link">Web design</a>
+              </option>
+              <option value="cash">
+                <a href="#" class="project-mobile__link">App design</a>
+              </option>
+            </select>
+          </div>
+          <!--======= projects header =======-->
+          <ul class="projects__header">
+            <li class="projects__subtitles">
+              <a href="#" class="projects__link">Product design</a>
+            </li>
+            <li class="projects__subtitles">
+              <a href="#" class="projects__link">Graphic design</a>
+            </li>
+            <li class="projects__subtitles">
+              <a href="#" class="projects__link">Interior design</a>
+            </li>
+            <li class="projects__subtitles">
+              <a href="#" class="projects__link">Web design</a>
+            </li>
+            <li class="projects__subtitles">
+              <a href="#" class="projects__link">App design</a>
+            </li>
+          </ul>
+          <!--======= projects__image-wrapper =======-->
+          <ul class="projects__image-wrapper">
+            <li class="projects__image">
+              <!--======= projects image =======-->
+              <img src="assets/images/card-bg.jpg" alt="laptop image" />
+              <!--======= projects information =======-->
+              <ul class="projects__information">
+                <li class="projects__views">
+                  <a href="#" class="projects__information-link">
+                    <i class="fas fa-eye"></i>
+                  </a>
+                  91312
+                </li>
+                <li class="projects__likes">
+                  <a href="#" class="projects__information-link">
+                    <i class="far fa-thumbs-up"> </i> </a
+                  >9312
+                </li>
+                <li class="projects__comments">
+                  <a href="#" class="projects__information-link">
+                    <i class="far fa-comment-alt"> </i> </a
+                  >1312
+                </li>
+              </ul>
+            </li>
+
+            <li class="projects__image">
+              <!--======= projects image =======-->
+              <img src="assets/images/card-bg (1).jpg" alt="camera image" />
+              <!--======= projects information =======-->
+              <ul class="projects__information">
+                <li class="projects__views">
+                  <a href="#" class="projects__information-link">
+                    <i class="fas fa-eye"></i>
+                  </a>
+                  91312
+                </li>
+                <li class="projects__likes">
+                  <a href="#" class="projects__information-link">
+                    <i class="far fa-thumbs-up"> </i>
+                  </a>
+                  9312
+                </li>
+                <li class="projects__comments">
+                  <a href="#" class="projects__information-link">
+                    <i class="far fa-comment-alt"> </i> </a
+                  >1312
+                </li>
+              </ul>
+            </li>
+
+            <li class="projects__image">
+              <!--======= projects image =======-->
+              <img src="assets/images/card-bg (2).jpg" alt="table image" />
+              <!--======= projects information =======-->
+              <ul class="projects__information">
+                <li class="projects__views">
+                  <a href="#" class="projects__information-link">
+                    <i class="fas fa-eye"></i>
+                  </a>
+                  91312
+                </li>
+                <li class="projects__likes">
+                  <a href="#" class="projects__information-link">
+                    <i class="far fa-thumbs-up"> </i> </a
+                  >9312
+                </li>
+                <li class="projects__comments">
+                  <a href="#" class="projects__information-link">
+                    <i class="far fa-comment-alt"> </i> </a
+                  >1312
+                </li>
+              </ul>
+            </li>
+
+            <li class="projects__image">
+              <!--======= projects image =======-->
+              <img src="assets/images/card-bg (3).jpg" alt="machine image" />
+              <!--======= projects information =======-->
+              <ul class="projects__information">
+                <li class="projects__views">
+                  <a href="#" class="projects__information-link">
+                    <i class="fas fa-eye"></i>
+                  </a>
+                  91312
+                </li>
+                <li class="projects__likes">
+                  <a href="#" class="projects__information-link">
+                    <i class="far fa-thumbs-up"> </i> </a
+                  >9312
+                </li>
+                <li class="projects__comments">
+                  <a href="#" class="projects__information-link">
+                    <i class="far fa-comment-alt"> </i> </a
+                  >1312
+                </li>
+              </ul>
+            </li>
+
+            <li class="projects__image">
+              <!--======= projects image =======-->
+              <img src="assets/images/card-bg (4).jpg" alt="console image" />
+              <!--======= projects information =======-->
+              <ul class="projects__information">
+                <li class="projects__views">
+                  <a href="#" class="projects__information-link">
+                    <i class="fas fa-eye"></i>
+                  </a>
+                  91312
+                </li>
+                <li class="projects__likes">
+                  <a href="#" class="projects__information-link">
+                    <i class="far fa-thumbs-up"> </i> </a
+                  >9312
+                </li>
+                <li class="projects__comments">
+                  <a href="#" class="projects__information-link">
+                    <i class="far fa-comment-alt"> </i> </a
+                  >1312
+                </li>
+              </ul>
+            </li>
+
+            <li class="projects__image">
+              <!--======= projects image =======-->
+              <img src="assets/images/card-bg (5).jpg" alt="device image" />
+              <!--======= projects information =======-->
+              <ul class="projects__information">
+                <li class="projects__views">
+                  <a href="#" class="projects__information-link">
+                    <i class="fas fa-eye"></i>
+                  </a>
+                  91312
+                </li>
+                <li class="projects__likes">
+                  <a href="#" class="projects__information-link">
+                    <i class="far fa-thumbs-up"> </i> </a
+                  >9312
+                </li>
+                <li class="projects__comments">
+                  <a href="#" class="projects__information-link">
+                    <i class="far fa-comment-alt"> </i> </a
+                  >1312
+                </li>
+              </ul>
+            </li>
+
+            <li class="projects__image">
+              <!--======= projects image =======-->
+              <img src="assets/images/card-bg (6).jpg" alt="laptop image" />
+              <!--======= projects information =======-->
+              <ul class="projects__information">
+                <li class="projects__views">
+                  <a href="#" class="projects__information-link">
+                    <i class="fas fa-eye"></i>
+                  </a>
+                  91312
+                </li>
+                <li class="projects__likes">
+                  <a href="#" class="projects__information-link">
+                    <i class="far fa-thumbs-up"> </i> </a
+                  >9312
+                </li>
+                <li class="projects__comments">
+                  <a href="#" class="projects__information-link">
+                    <i class="far fa-comment-alt"> </i> </a
+                  >1312
+                </li>
+              </ul>
+            </li>
+
+            <li class="projects__image">
+              <!--======= projects image =======-->
+              <img src="assets/images/card-bg (7).jpg" alt="clock image" />
+              <!--======= projects information =======-->
+              <ul class="projects__information">
+                <li class="projects__views">
+                  <a href="#" class="projects__information-link">
+                    <i class="fas fa-eye"></i>
+                  </a>
+                  91312
+                </li>
+                <li class="projects__likes">
+                  <a href="#" class="projects__information-link">
+                    <i class="far fa-thumbs-up"> </i> </a
+                  >9312
+                </li>
+                <li class="projects__comments">
+                  <a href="#" class="projects__information-link">
+                    <i class="far fa-comment-alt"> </i> </a
+                  >1312
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--======= TEAM section =======-->
+      <section class="team-person">
+        <div class="container">
+          <h2 class="team-person__title">Our Team</h2>
+          <ul class="team-person__wrapper">
+            <li class="team">
+              <div class="team__fhoto-wrapper">
+                <img src="assets/images/person.png" alt="Craig Todd fhoto" />
+              </div>
+              <div class="team-wrapper">
+                <h4 class="team__title">Craig Todd</h4>
+                <span class="team__post">CEO</span>
+                <p class="team__text">
+                  Like the majority of sales people, I visit a huge number of
+                  clients and prospects every month
+                </p>
+              </div>
+            </li>
+            <li class="team">
+              <div class="team__fhoto-wrapper">
+                <img
+                  src="assets/images/person (1).png"
+                  alt="Vera Hopkins photo"
+                />
+              </div>
+              <div class="team-wrapper">
+                <h4 class="team__title">Vera Hopkins</h4>
+                <span class="team__post">UX Lead</span>
+                <p class="team__text">
+                  Differentiate Yourself And Attract More Attention Sales And
+                  Profits
+                </p>
+              </div>
+            </li>
+            <li class="team">
+              <div class="team__fhoto-wrapper">
+                <img src="assets/images/person (2).png" alt="Jennie Graham" />
+              </div>
+              <div class="team-wrapper">
+                <h4 class="team__title">Jennie Graham</h4>
+                <span class="team__post">UX/UI Designer</span>
+                <p class="team__text">WordPress Version 2 0 3 Review</p>
+              </div>
+            </li>
+            <li class="team">
+              <div class="team__fhoto-wrapper">
+                <img
+                  src="assets/images/person (3).png"
+                  alt="Eunice Wong photo"
+                />
+              </div>
+              <div class="team-wrapper">
+                <h4 class="team__title">Eunice Wong</h4>
+                <span class="team__post">Marketing consultant</span>
+                <p class="team__text">
+                  Advertising Internet Online Opportunities To Explore
+                </p>
+              </div>
+            </li>
+            <li class="team">
+              <div class="team__fhoto-wrapper">
+                <img
+                  src="assets/images/person (4).png"
+                  alt="Chase Meyer photo"
+                />
+              </div>
+              <div class="team-wrapper">
+                <h4 class="team__title">Chase Meyer</h4>
+                <span class="team__post">Front-end Developer</span>
+                <p class="team__text">
+                  Search Engine Optimization And Advertising
+                </p>
+              </div>
+            </li>
+            <li class="team">
+              <div class="team__fhoto-wrapper">
+                <img
+                  src="assets/images/person (5).png"
+                  alt="Johnny Vargas photo"
+                />
+              </div>
+              <div class="team-wrapper">
+                <h4 class="team__title">Johnny Vargas</h4>
+                <span class="team__post">Back-end Developer</span>
+                <p class="team__text">
+                  Maintain Your PC S Performance With PC Programs
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--======= CONTACTS section =======-->
+      <section class="contacts">
+        <div class="container">
+          <h2 class="contacts-title">Contacts Us</h2>
+
+          <div class="contacs-wrapper">
+            <!--======= CONTACTS =======-->
+            <div class="contacts__communication">
+              <h4 class="communication__title">Get In Touch</h4>
+              <div class="location-wrapper">
+                <span class="fas fa-map-marker-alt"></span>
+                <p class="communication__location">
+                  2300 W Arbutus Dr Citrus Springs, FL 34434, USA
+                </p>
+              </div>
+              <div class="mail-wrapper">
+                <span class="fas fa-envelope"></span>
+                <p class="communication__mail">contact@hofmannui.net</p>
+              </div>
+              <div class="phone-wrapper">
+                <span class="fas fa-phone-alt"></span>
+                <ul class="communication__phone">
+                  <li>793-891-7938</li>
+                  <li>512-915-5628</li>
+                  <li>952-775-6021</li>
+                </ul>
+              </div>
+            </div>
+
+            <!--======= FORMS =======-->
+            <form class="contacts__form">
+              <div class="name-and-email-wrapper">
+                <!--======= name =======-->
+                <div class="contacts__name">
+                  <label class="contacts__label" for="customer-name">
+                    Name:
+                  </label>
+                  <input
+                    class="contacts__input"
+                    id="customer-name"
+                    type="text"
+                    name="customer_name"
+                    placeholder="Your name"
+                  />
+                </div>
+
+                <!--======= email =======-->
+                <div class="contacts__email">
+                  <label class="contacts__label" for="customer-name">
+                    Email:
+                  </label>
+                  <input
+                    class="contacts__input"
+                    id="customer-email"
+                    type="email"
+                    name="customer_email"
+                    placeholder="Your email"
+                  />
+                </div>
+              </div>
+
+              <!--======= message =======-->
+              <div class="contacts__massage">
+                <label class="contacts__label" for="customer-wishes">
+                  Message:
+                </label>
+
+                <textarea
+                  class="contacts__input contacts__input--laptop"
+                  name="srecial_requests"
+                  id="customer-wishes"
+                  rows="7"
+                  maxlength="200"
+                  placeholder="200 characters maximum"
+                ></textarea>
+                <textarea
+                  class="contacts__input contacts__input--tablet"
+                  name="srecial_requests"
+                  id="customer-wishes"
+                  rows="4"
+                  maxlength="200"
+                  placeholder="200 characters maximum"
+                ></textarea>
+              </div>
+
+              <!--======= button submit =======-->
+              <button class="form-button" type="submit">Submit</button>
+            </form>
+
+            <!--======= SOCIAL ICONS =======-->
+            <div class="contacts__social-wrapper">
+              <h4 class="social__title">Credits</h4>
+              <p class="social__text">
+                In order to discuss the general function of the logo, we must
+                firstly identify and define the environment where this will have
+                to fulfill its function.
+              </p>
+              <h4 class="social__title">Follow</h4>
+              <ul class="contacts__social-icons">
+                <li class="social-item">
+                  <a href="#"><i class="fab fa-pinterest"></i></a>
+                </li>
+                <li class="social-item">
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li class="social-item">
+                  <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li class="social-item">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="social-item">
+                  <a href="#"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li class="social-item">
+                  <a href="#"><i class="fab fa-instagram-square"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--======= FOOTER =======-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-column">
+            <h4 class="footer__title">Company</h4>
+            <ul class="footer__link-wrapper">
+              <li><a href="#" class="footer__link">News</a></li>
+              <li><a href="#" class="footer__link">Blog</a></li>
+              <li><a href="#" class="footer__link">Testimonials</a></li>
+              <li><a href="#" class="footer__link">About Us</a></li>
+              <li><a href="#" class="footer__link">Press Kit</a></li>
+              <li><a href="#" class="footer__link">Get in Touch</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer__title">Products</h4>
+            <ul class="footer__link-wrapper">
+              <li><a href="#" class="footer__link">Ui Kits</a></li>
+              <li><a href="#" class="footer__link">Icons</a></li>
+              <li><a href="#" class="footer__link">Wordpress Themes</a></li>
+              <li><a href="#" class="footer__link">Mock-Ups</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer__title">Support</h4>
+            <ul class="footer__link-wrapper">
+              <li><a href="#" class="footer__link">Community</a></li>
+              <li><a href="#" class="footer__link">Forum</a></li>
+              <li><a href="#" class="footer__link">Distributors</a></li>
+              <li><a href="#" class="footer__link">Privacy Policy</a></li>
+              <li><a href="#" class="footer__link">Terms of Use</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer__title">Customers</h4>
+            <ul class="footer__link-wrapper">
+              <li><a href="#" class="footer__link">Documentation</a></li>
+              <li><a href="#" class="footer__link">Tools</a></li>
+              <li><a href="#" class="footer__link">Downloads</a></li>
+              <li><a href="#" class="footer__link">Developer Center</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer__copyright">© 2016 Hofmann UI Kit</div>
+          <ul class="footer__social">
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram-square"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
